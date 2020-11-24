@@ -1,9 +1,9 @@
-/*====
+/*============
   Navbar
 ============== */
 .navbar {
-  background-image: linear-gradient(to left, #12082d, #130a31, #140b35, #160c39, #180d3d);
-  color: $color-white;
+  background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
+  color: $color-secondary;
   height: 4.5rem;
   & .flex {
     justify-content: space-between;
@@ -11,12 +11,12 @@
   & ul {
     display: flex;
     & a {
-      color: $color-white;
+      color: $color-secondary;
       padding: 0.7rem;
       margin: 0 0.3rem;
     }
     & a:hover {
-      border-bottom: 0.1rem $color-white solid;
+      border-bottom: 0.1rem $color-secondary solid;
     }
   }
 }
@@ -28,19 +28,20 @@
   height: 100%;
 }
 
-/*====
+/*============
   Showcase
 ============== */
 .showcase {
   height: 25rem;
-  background-image: linear-gradient(to left, #12082d, #130a31, #140b35, #160c39, #180d3d);
-  color: $color-white;
+  background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
+  color: $color-secondary;
   position: relative;
   h1 {
     font-size: 2.5rem;
   }
   p {
     margin: 1.3rem 0;
+    font-size: 1.05rem;
   }
   & .grid {
     grid-template-columns: 55% 45%;
@@ -80,10 +81,54 @@
   bottom: -4.5rem;
   right: 0;
   left: 0;
-  background: $color-white;
-  
+  background: $color-secondary;
+
   transform: skewY(-3deg);
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
 } 
+
+/*============
+  Stats
+============== */
+.stats { 
+  padding-top: 6.3rem;
+  p {
+    color: lighten($color-haiti, 25%);
+  }
+  &-heading {
+    max-width: 32rem;
+    margin: auto;
+  }
+  & .grid h3 {
+    font-size: 2.2rem;
+  }
+  & .grid p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+/*============
+  Stats
+============== */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  & > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+}
+
+/*============
+  Cloud
+============== */
+.cloud {
+  background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
+  & .grid {
+    grid-template-columns: 4fr 3fr;
+  }
+}
+

@@ -2,8 +2,10 @@
 node_modules/
 */images/*
 images/*
-fonts/
-css/
+/css
+css/main.css
+css/main.css.map
+fonts/*
 
 # misc
 .DS_Store
