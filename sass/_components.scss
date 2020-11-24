@@ -1,0 +1,71 @@
+/*====
+  Navbar
+============== */
+.navbar {
+  background-color: $color-haiti;
+  color: $color-white;
+  height: 4.5rem;
+  & .flex {
+    justify-content: space-between;
+  }
+  & ul {
+    display: flex;
+    & a {
+      color: $color-white;
+      padding: 0.7rem;
+      margin: 0 0.3rem;
+    }
+    & a:hover {
+      border-bottom: 0.1rem $color-white solid;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/*====
+  Showcase
+============== */
+.showcase {
+  height: 25rem;
+  background-color: $color-haiti;
+  color: $color-white;
+  position: relative;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    margin: 1.3rem 0;
+  }
+  & .grid {
+    grid-template-columns: 55% 45%;
+    gap: 2rem;
+    overflow: visible;
+  }
+  .showcase-form {
+    position: relative;
+    top: 3.8rem;
+    height: 22rem;
+    width: 25rem;
+    padding: 2.5rem;
+    z-index: 100;
+    justify-self: flex-end;
+    & .form-control {
+      margin: 2.5rem 0;
+    }
+
+    & input[type='text'], 
+    & input[type='email'] {
+      border: 0;
+      border-bottom: 1px solid #b4becb;
+      width: 100%;
+      padding: 0.2rem;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# dependansies
+node_modules/
+*/images/*
+images/*
+css/
+
+# misc
+.DS_Store
+.vscode
+
+package-lock.json

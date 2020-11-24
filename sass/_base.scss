@@ -1,0 +1,35 @@
+$color-mine-shaft: #333;
+$color-white: #fff;
+$color-haiti: #12082d;
+
+@font-face {
+  font-family: vfutura;
+  src: url("/fonts/FuturaPTLight.otf");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: vfutura, sans-serif;
+  color: $color-mine-shaft;
+  line-height: 1.6;
+}
+
+ul { list-style-type: none; }
+
+a { text-decoration: none; }
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0.7rem 0;
+}
+
+p { margin: 0.7rem 0; }
+
+img { width: 100%; }

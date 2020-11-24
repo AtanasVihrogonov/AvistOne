@@ -1,0 +1,25 @@
+/* Utilities */
+.container {
+  max-width: 68rem;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.card {
+  background-color: $color-white;
+  color: $color-mine-shaft;
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 1.3rem;
+  margin: 0.7rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
