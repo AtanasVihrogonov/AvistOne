@@ -2,7 +2,7 @@
   Navbar
 ============== */
 .navbar {
-  background-color: $color-haiti;
+  background-image: linear-gradient(to left, #12082d, #130a31, #140b35, #160c39, #180d3d);
   color: $color-white;
   height: 4.5rem;
   & .flex {
@@ -33,7 +33,7 @@
 ============== */
 .showcase {
   height: 25rem;
-  background-color: $color-haiti;
+  background-image: linear-gradient(to left, #12082d, #130a31, #140b35, #160c39, #180d3d);
   color: $color-white;
   position: relative;
   h1 {
@@ -56,9 +56,8 @@
     z-index: 100;
     justify-self: flex-end;
     & .form-control {
-      margin: 2.5rem 0;
+      margin: 30px 0;
     }
-
     & input[type='text'], 
     & input[type='email'] {
       border: 0;
@@ -67,5 +66,24 @@
       padding: 0.2rem;
       font-size: 1rem;
     }
+    & input:focus {
+      outline: none;
+    }
   }
 }
+
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 6.5rem;
+  bottom: -4.5rem;
+  right: 0;
+  left: 0;
+  background: $color-white;
+  
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+} 

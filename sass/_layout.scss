@@ -3,16 +3,33 @@
   max-width: 68rem;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 40px;
+  padding: 0 2.5rem;
 }
 
 .card {
   background-color: $color-white;
   color: $color-mine-shaft;
-  border-radius: 0.6rem;
+  border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 1.3rem;
   margin: 0.7rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 2.5rem;
+  cursor: pointer;
+  background: $color-haiti;
+  color: $color-white;
+  border: none;
+  border-radius: 5px;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid $color-white;
+}
+.btn:hover {
+  transform: scale(0.98);
 }
 
 .grid {
