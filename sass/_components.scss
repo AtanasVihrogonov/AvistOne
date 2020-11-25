@@ -1,20 +1,36 @@
 /*==== Navbar ==== */
 .navbar {
-  background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
+  background-image: linear-gradient(to right, #231058, #200f51, #1d0f4a, #1b0e44, #180d3d);
   color: $color-secondary;
-  height: 4.5rem;
+  height: 70px;
+  
+  @media(max-width: 500px) { 
+    height: 110px;
+    h1 { margin-top: 20px; }
+    & .flex { flex-direction: column; }
+    ul { 
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      background-color: rgba(0, 0, 0, 0.2);
+      & li a:hover {
+        border-bottom: 1px $color-secondary solid;
+      }
+    }
+  }
+
   & .flex {
     justify-content: space-between;
-  }
+  } 
+
   & ul {
     display: flex;
-    & a {
+    & li a {
       color: $color-secondary;
-      padding: 0.7rem;
-      margin: 0 0.3rem;
+      padding: 10px;
+      margin: 0 5px;
     }
-    & a:hover {
-      border-bottom: 0.1rem $color-secondary solid;
+    & li a:hover {
+      border-bottom: 1px $color-secondary solid;
     }
   }
 }
@@ -28,30 +44,51 @@
 
 /*==== Showcase ==== */
 .showcase {
-  height: 25rem;
-  background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
+  background-image: linear-gradient(to right, #231058, #200f51, #1d0f4a, #1b0e44, #180d3d);
+  height: 400px;
   color: $color-secondary;
   position: relative;
+
+  @media(max-width: 768px) {
+    height: auto;
+    &-text {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    &-form {
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+
   h1 {
     font-size: 2.5rem;
   }
+
   p {
-    margin: 1.3rem 0;
-    font-size: 1.05rem;
+    margin: 20px 0;
+    font-size: 1.1rem;
   }
+
   & .grid {
-    grid-template-columns: 55% 45%;
-    gap: 2rem;
     overflow: visible;
+    grid-template-columns: 55% auto;
+    gap: 30px;
   }
+
   .showcase-form {
     position: relative;
-    top: 3.8rem;
-    height: 22rem;
-    width: 25rem;
-    padding: 2.5rem;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    @media(max-width: 500px){
+      width: 300px;
+      margin: 0 auto;
+    }
+
     & .form-control {
       margin: 30px 0;
     }
@@ -60,7 +97,7 @@
       border: 0;
       border-bottom: 1px solid #b4becb;
       width: 100%;
-      padding: 0.2rem;
+      padding: 3px;
       font-size: 1rem;
     }
     & input:focus {
@@ -73,8 +110,8 @@
 .showcase::after {
   content: '';
   position: absolute;
-  height: 6.5rem;
-  bottom: -4.5rem;
+  height: 100px;
+  bottom: -70px;
   right: 0;
   left: 0;
   background: $color-secondary;
@@ -87,12 +124,12 @@
 
 /*==== Stats ==== */
 .stats { 
-  padding-top: 6.3rem;
+  padding-top: 100px;
   p {
     color: lighten($color-haiti, 15%);
   }
   &-heading {
-    max-width: 32rem;
+    max-width: 500px;
     margin: auto;
   }
   & .grid h3 {
@@ -111,6 +148,10 @@
   & > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    @media(max-width: 768px) {
+      grid-column: 1;
+      grid-row: 1;
+    }
   }
 }
 
@@ -126,11 +167,11 @@
   }
   & .card {
     text-align: center;
-    margin: 0.5rem 0.6rem 2.5rem;
+    margin: 18px 10px 40px;
     transition: transform 0.2s ease-in;
     h4 {
       font-size: 1.2rem;
-      margin-bottom: 0.7rem;
+      margin-bottom: 10px;
     }
   }
   & .card:hover {
@@ -142,7 +183,7 @@
 .footer {
   background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
   .social a {
-    margin: 0.6rem;
+    margin: 0 10px;
   }
 }
 
