@@ -89,7 +89,7 @@
 .stats { 
   padding-top: 6.3rem;
   p {
-    color: lighten($color-haiti, 25%);
+    color: lighten($color-haiti, 15%);
   }
   &-heading {
     max-width: 32rem;
@@ -115,11 +115,8 @@
 }
 
 /*==== Cloud ==== */
-.cloud {
-  background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
-  & .grid {
-    grid-template-columns: 4fr 3fr;
-  }
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
 }
 
 /*==== Languages ==== */
@@ -143,6 +140,7 @@
 
 /*==== Footer ==== */
 .footer {
+  background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
   .social a {
     margin: 0.6rem;
   }
