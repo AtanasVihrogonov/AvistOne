@@ -2,9 +2,10 @@
 node_modules/
 */images/*
 images/*
-/css
+# /css
 css/main.css
 css/main.css.map
+dist/css/main.min.css.map
 fonts/*
 
 # misc

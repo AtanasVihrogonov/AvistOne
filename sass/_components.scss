@@ -1,6 +1,4 @@
-/*============
-  Navbar
-============== */
+/*==== Navbar ==== */
 .navbar {
   background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
   color: $color-secondary;
@@ -28,9 +26,7 @@
   height: 100%;
 }
 
-/*============
-  Showcase
-============== */
+/*==== Showcase ==== */
 .showcase {
   height: 25rem;
   background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
@@ -89,9 +85,7 @@
   -ms-transform: skewY(-3deg);
 } 
 
-/*============
-  Stats
-============== */
+/*==== Stats ==== */
 .stats { 
   padding-top: 6.3rem;
   p {
@@ -110,9 +104,7 @@
   }
 }
 
-/*============
-  Stats
-============== */
+/*==== Cli ==== */
 .cli .grid {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -122,13 +114,37 @@
   }
 }
 
-/*============
-  Cloud
-============== */
+/*==== Cloud ==== */
 .cloud {
   background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
   & .grid {
     grid-template-columns: 4fr 3fr;
+  }
+}
+
+/*==== Languages ==== */
+.languages {
+  .flex {
+    flex-wrap: wrap;
+  }
+  & .card {
+    text-align: center;
+    margin: 0.5rem 0.6rem 2.5rem;
+    transition: transform 0.2s ease-in;
+    h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+  & .card:hover {
+    transform: translateY(-15px);
+  }
+}
+
+/*==== Footer ==== */
+.footer {
+  .social a {
+    margin: 0.6rem;
   }
 }
 

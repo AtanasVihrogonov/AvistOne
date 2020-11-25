@@ -1,5 +1,5 @@
 .container {
-  max-width: 68rem;
+  max-width: 69rem;
   margin: 0 auto;
   overflow: auto;
   padding: 0 2.5rem;
@@ -7,7 +7,7 @@
 
 .card {
   background-color: $color-secondary;
-  color: $color-mine-shaft;
+  color: $color-dark;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 1.3rem;
@@ -74,23 +74,34 @@
   background-color: $color-primary;
   color: $color-secondary;
 }
-
 .bg-secondary,
 .btn-secondary {
   background-color: $color-secondary;
   color: $color-secondary;
 }
-
+.bg-dark,
+.btn-dark {
+  background-color:  darken($color-haiti, 8%);
+  color: $color-secondary;
+}
+.bg-light,
+.btn-light {
+  background-color: $color-light;
+  color: $color-dark;
+}
 .bg-haiti,
 .btn-haiti {
   background-color:  lighten($color-haiti, 10%);
   color: $color-secondary;
 }
 
-.bg-light,
-.btn-light {
-  background-color: $color-light;
-  color: $color-mine-shaft;
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: $color-secondary;
 }
 
 /* Text sizes */
