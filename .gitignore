@@ -1,12 +1,12 @@
 # dependansies
 node_modules/
-*/images/*
-images/*
+# */images/*
+# images/*
 # /css
 # css/main.css
 css/main.css.map
 dist/css/main.min.css.map
-/fonts
+# /fonts
 
 # misc
 .DS_Store
