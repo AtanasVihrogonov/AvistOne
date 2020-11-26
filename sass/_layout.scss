@@ -113,11 +113,11 @@
 }
 
 /* Text colors */
-.text-primary { color: $color-secondary; }
+.text-primary { color: $color-primary; }
 .text-secondary { color: $color-secondary; }
-.text-dark { color: $color-secondary; }
-.text-light { color: $color-dark; }
-.text-haiti { color: $color-secondary; }
+.text-dark { color: $color-dark; }
+.text-light { color: $color-light; }
+.text-haiti { color: $color-haiti; }
 
 /* Text sizes */
 .lead { font-size: 20px; }
@@ -132,9 +132,20 @@
   .showcase .grid,
   .stats .grid,
   .cli .grid,
-  .cloud .grid {
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+    & img {
+      justify-self: center;
+    }
   }
 }
 
