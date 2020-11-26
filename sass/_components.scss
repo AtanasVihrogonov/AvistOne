@@ -61,9 +61,7 @@
     }
   }
 
-  h1 {
-    font-size: 2.5rem;
-  }
+  h1 { font-size: 2.5rem; }
 
   p {
     margin: 20px 0;
@@ -76,6 +74,13 @@
     gap: 30px;
   }
 
+  .showcase-text {
+    animation: slideInFromLeft 1s ease-in;
+    @media(max-width: 768px){
+      animation: slideInFromTop 1s ease-in;
+    }
+  }
+
   .showcase-form {
     position: relative;
     top: 60px;
@@ -84,6 +89,10 @@
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+    @media(max-width: 768px){
+      animation: slideInFromBottom 1s ease-in;
+    }
     @media(max-width: 500px){
       width: 300px;
       margin: 0 auto;
@@ -125,6 +134,7 @@
 /*==== Stats ==== */
 .stats { 
   padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
   p {
     color: lighten($color-haiti, 15%);
   }
@@ -246,6 +256,31 @@
   background-image: linear-gradient(to left, #12082d, #140b34, #160d3b, #1a0d43, #1e0d4a);
   .social a {
     margin: 0 10px;
+    & :hover {
+      transform: scale(0.98);
+    }
   }
+}
+
+/* Animations */
+// from left
+@keyframes slideInFromLeft {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+// from right
+@keyframes slideInFromRight {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+// from top
+@keyframes slideInFromTop {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateX(0); }
+}
+// from bottom
+@keyframes slideInFromBottom {
+  0% { transform: translateY(100%); }
+  100% { transform: translateX(0); }
 }
 
