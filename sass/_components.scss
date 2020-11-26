@@ -88,6 +88,7 @@
     width: 400px;
     padding: 40px;
     z-index: 100;
+    margin: 0 auto;
     justify-self: flex-end;
     animation: slideInFromRight 1s ease-in;
     @media(max-width: 768px){
