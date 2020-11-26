@@ -4,6 +4,9 @@ $color-dark: #333;
 $color-light: #f4f4f4;
 $color-haiti: #1e0d4a;
 
+$color-success: #5cb85c;
+$color-error: #d9534f;
+
 @font-face {
   font-family: vfutura;
   src: url("/fonts/FuturaPTLight.otf");
@@ -34,3 +37,9 @@ h2 {
 p { margin: 0.7rem 0; }
 
 img { width: 100%; }
+
+code, pre {
+  background: $color-dark;
+  color: $color-secondary;
+  padding: 10px;
+}

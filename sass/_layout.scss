@@ -42,6 +42,14 @@
 
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 
+.alert {
+  background-color: &color-light;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  i { margin-right: 10px; }
+}
+
 /* Margin */
 .my-1 { margin: 1rem 0; }
 .my-2 { margin: 1.5rem 0; }
@@ -104,14 +112,19 @@
   color: $color-secondary;
 }
 
+/* Text colors */
+.text-primary { color: $color-secondary; }
+.text-secondary { color: $color-secondary; }
+.text-dark { color: $color-secondary; }
+.text-light { color: $color-dark; }
+.text-haiti { color: $color-secondary; }
+
 /* Text sizes */
 .lead { font-size: 20px; }
-
 .sm { font-size: 1rem; }
 .md { font-size: 2rem; }
 .lg { font-size: 3rem; }
 .xl { font-size: 4rem; }
-
 
 /* Global Tablets and under */
 @media(max-width: 768px) {
