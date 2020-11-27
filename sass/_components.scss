@@ -235,11 +235,8 @@
 
   li a { color: $color-dark; }
   
-  a:hover { 
-    font-weight: bold;
-    color: $color-dark;
-  }
-  #active { color: lighten($color-haiti, 30%); }
+  #active { color: lighten($color-haiti, 30%); }  
+  a:hover { font-weight: bold; }
 }
 
 /* Alert */
