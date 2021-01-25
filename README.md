@@ -1,5 +1,7 @@
 # AvistOne
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd6396de-5f1f-4508-bb18-6d4cfbfef6e5/deploy-status)](https://app.netlify.com/sites/avistone/deploys)
+
 > Fake cloud hosting website
 
 ## Description
