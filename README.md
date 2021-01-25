@@ -8,7 +8,7 @@
 AvistOne is a fake cloud hosting platform website created with custom CSS like Bootstrap.
 
 ### Demo Website
-- 👉 Netlify : [https://avistone.app](https://distracted-golick-6ede48.netlify.app/index.html)
+- 👉 Netlify : [https://avistone.app](https://avistone.netlify.app/index.html)
 
 
 ### Technologies
