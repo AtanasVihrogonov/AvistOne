@@ -127,7 +127,7 @@
 .xl { font-size: 4rem; }
 
 /* Global Tablets and under */
-@media(max-width: 768px) {
+@media(max-width: 868px) {
   .grid,
   .showcase .grid,
   .stats .grid,
@@ -149,5 +149,3 @@
   }
 }
 
-/* Mobile */
-@media(max-width: 500px) {}
